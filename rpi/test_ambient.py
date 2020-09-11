@@ -16,7 +16,7 @@ GPIO.setmode(GPIO.BOARD)
 GPIO.setup(3, GPIO.IN)
 try:
     # Interrupt-Event hinzufuegen, steigende Flanke
-    GPIO.add_event_detect(7, GPIO.FALLING, callback = intH)
+    GPIO.add_event_detect(3, GPIO.FALLING, callback = intH)
 
     print("Light Sensor Test")
     print("=================")
