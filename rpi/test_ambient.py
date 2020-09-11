@@ -13,7 +13,7 @@ def intH(channel):
     print("INTERRUPT")
 
 GPIO.setmode(GPIO.BOARD)
-GPIO.setup(7, GPIO.IN)
+GPIO.setup(3, GPIO.IN)
 try:
     # Interrupt-Event hinzufuegen, steigende Flanke
     GPIO.add_event_detect(7, GPIO.FALLING, callback = intH)
